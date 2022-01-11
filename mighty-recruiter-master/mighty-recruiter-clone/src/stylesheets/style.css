@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.4s;
+}
+.app {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+.content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.content > nav {
+    display: flex;
+    height: 88px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 98px;
+    padding-right: 98px;
+    position: fixed;
+}
+.nav-title {
+    display: flex;
+    height: 100%;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+}
+.nav-title > img {
+    object-fit: contain;
+}
+.nav-links {
+    display: flex;
+    height: 100%;
+    width: fit-content;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-links > ul {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+.nav-links > ul > li {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+}
+.nav-links > ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    border-radius: 2px;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+    padding: 16px 20px;
+    margin: 4px;
+}
+.nav-links > ul > li > a:hover {
+    background: rgba(10, 66, 107);
+}
+.nav-links > ul > li > a > i {
+    font-weight: bold;
+}
+.nav-links > ul > li > .nav-dropdown {
+    position: absolute;
+    display: none;
+    top: 100%;
+    height: auto;
+    width: max-content;
+    background: rgb(48, 91, 125);
+    text-align: left;
+}
+.nav-links > ul > li > .nav-dropdown > a {
+    display: block;
+    color: white;
+    font-weight: 400;
+    font-size: 13px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    text-align: left;
+    line-height: 18px;
+    padding: 6px 16px;
+    width: 100%;
+    text-transform: uppercase;
+}
+.nav-links > ul > li:hover > .nav-dropdown {
+    display: block;
+}
+.nav-links > ul > li > .nav-dropdown > a:hover {
+    color: rgb(255, 193, 0);
+}
+.nav-links > ul > li > button {
+    display: flex;
+    color: white;
+    height: 35px;
+    width: 126px;
+    border: 0.5px solid white;
+    background: none;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+    border-radius: 2px;
+    border-width: 1px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.nav-links > ul > li > button:hover {
+    background: rgb(255, 193, 0);
+    color: white;
+    border-color: rgb(255, 193, 0);
+    cursor: pointer;
+}
+.home-page-wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../assets/images/home-sm.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+}
+.hp-intro {
+    display: flex;
+    height: 100%;
+    width: 76%;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+}
+.hp-intro > h1 {
+    color: white;
+    font-size: 64px;
+    font-weight: 600px;
+    line-height: 70px;
+    margin-block-start: 20px;
+    margin-block-end: 30px;
+    font-family: 'Montserrat',sans-serif;
+    width: 60%;
+    padding-top: 50px;
+}
+.hp-intro > h3 {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.hp-intro > ul {
+    line-height: 30px;
+}
+.hp-intro > ul > li {
+    display: list-item;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+.hp-intro > button {
+    display: flex;
+    height: 50px;
+    margin-top: 20px;
+    min-width: 220px;
+    padding-right: 27px;
+    padding-left: 27px;
+    font-size: 16px;
+    font-weight: 700;
+    background: rgb(255, 193, 0);
+    color: white;
+    /* background: rgb(206, 155, 0); */
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+.hp-intro > button:hover {
+    cursor: pointer;
+    background: rgb(206, 155, 0);
+}
+.scroll-chevron {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    bottom: 30px;
+}
